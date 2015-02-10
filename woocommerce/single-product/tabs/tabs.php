@@ -20,21 +20,22 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 if ( ! empty( $tabs ) ) : ?>
 
 	<div class="woocommerce-tabs">
-		<ul class="tabs">
+		<div class="soleil-tabs">
+				
 			<?php foreach ( $tabs as $key => $tab ) : ?>
-
-				<li class="<?php echo $key ?>_tab">
-					<a href="#tab-<?php echo $key ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?></a>
-				</li>
-
+				<div class="soleil-product-more-info" id="soleil-product-info-<?php echo $key ?>">
+					<span class="soleil-product-more-info-title">
+						<a href="#tab-<?php echo $key ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?></a>
+					</span>
+									<?php call_user_func( $tab['callback'], $key, $tab ) ?>
+				</div><?php //end class soleil-product-more-info ?>
 			<?php endforeach; ?>
-		</ul>
+				
+		</div>
 		<?php foreach ( $tabs as $key => $tab ) : ?>
 
 			<?php /*<div class="panel entry-content" id="tab-<?php echo $key ?>">*/ ?>
-			<div class="panel entry-content" id="tab-<?php echo $key ?>">
-				<?php call_user_func( $tab['callback'], $key, $tab ) ?>
-			</div>
+			
 
 		<?php endforeach; ?>
 	</div>
