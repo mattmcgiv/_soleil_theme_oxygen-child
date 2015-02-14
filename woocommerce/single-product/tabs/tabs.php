@@ -19,7 +19,7 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $tabs ) ) : ?>
 
-	<div class="woocommerce-tabs">
+	<?php //<div class="woocommerce-tabs"> ?>
 		<div class="soleil-tabs">
 				
 			<?php foreach ( $tabs as $key => $tab ) : ?>
@@ -38,6 +38,6 @@ if ( ! empty( $tabs ) ) : ?>
 			
 
 		<?php endforeach; ?>
-	</div>
+	<?php //</div> ?>
 
 <?php endif; ?>
