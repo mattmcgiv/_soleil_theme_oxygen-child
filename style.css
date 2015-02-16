@@ -11,6 +11,15 @@
   padding-right: 22px;
 }
 
+.laborator-woocommerce .product-single .white-row {
+  border-left: none;
+}
+
+table.shop_attributes tbody tr td p {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
 @media screen and (min-width: 500px) {
   .soleil-tabs {
     margin-top: 30px;
