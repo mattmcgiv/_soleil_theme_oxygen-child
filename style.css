@@ -5,7 +5,9 @@
 
 */
 
-/*write media query so that the above only applies above a certain pixel width, otherwise it will just go back to tabs*/
+.page-container .vc_separator.double-bordered-thick h4{
+  font-size: 275%;
+}
 
 .description-tab p {
   padding-right: 22px;
