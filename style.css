@@ -38,11 +38,12 @@ table.shop_attributes tbody tr td p {
   #soleil-product-info-description {
     width: 58%;
     float: left;
+    margin-right: 97px;
   }
 
   #soleil-product-info-additional_information {
-    width: 33%;
+    width: 25%;
     float: left;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 }
