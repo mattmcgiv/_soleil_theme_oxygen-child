@@ -22,3 +22,18 @@ function soleil_no_menu_on_checkout() {
     define("NO_HEADER_MENU", true);
   }
 }
+
+//DISABLE WOOCOMMERCE PRETTY PHOTO SCRIPTS
+add_action( 'wp_print_scripts', 'prettyPhoto_deregister_javascript', 100 );
+
+function prettyPhoto_deregister_javascript() {
+  wp_deregister_script( 'prettyPhoto' );
+  wp_deregister_script( 'prettyPhoto-init' );
+}
+
+//DISABLE WOOCOMMERCE PRETTY PHOTO STYLE
+add_action( 'wp_print_styles', 'prettyPhoto_deregister_styles', 100 );
+
+function prettyPhoto_deregister_styles() {
+  wp_deregister_style( 'woocommerce_prettyPhoto_css' );
+}
