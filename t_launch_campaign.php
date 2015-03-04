@@ -16,6 +16,12 @@ get_header();
 
 /*For the sharing page */
 
+#solc-redeem-now {
+	margin: 0px auto;
+	display: block;
+	font-size: 200%;
+}
+
 @media (max-width: 390px) {
 	body, html { 
 		overflow-x:hidden; 

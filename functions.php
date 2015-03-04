@@ -20,6 +20,7 @@ add_action('wp_head', 'soleil_no_menu_on_checkout');
 function soleil_no_menu_on_checkout() {
   if (is_checkout()) {
     define("NO_HEADER_MENU", true);
+    define("NO_FOOTER_MENU", true);
   }
 }
 
