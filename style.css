@@ -4,6 +4,11 @@
 	Template: oxygen
 
 */
+
+div#payment.woocommerce-checkout-payment {
+  display: none;
+}
+
 .laborator-woocommerce .product-single .product-left-info .product-images #main-image-slider .owl-wrapper-outer {
   border: none;
 }
