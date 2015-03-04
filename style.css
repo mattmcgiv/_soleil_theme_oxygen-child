@@ -4,7 +4,9 @@
 	Template: oxygen
 
 */
-
+.laborator-woocommerce .product-single .product-left-info .product-images #main-image-slider .owl-wrapper-outer {
+  border: none;
+}
 .page-container .vc_separator.double-bordered-thick h4{
   font-size: 275%;
 }
